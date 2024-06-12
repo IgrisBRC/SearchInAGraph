@@ -1,7 +1,7 @@
 #include "graph.h"
 #include <stdio.h>
 
-void BFS(struct Node *node) {
+void DFS(struct Node *node) {
 
   if (node) {
     printf("%d -> ", node->val);
@@ -15,9 +15,8 @@ void BFS(struct Node *node) {
   }
 
   for (int i = 0; i < node->conns; i++) {
-    BFS(*itr);
+    DFS(*itr);
     itr++;
   }
 }
 
-void DFS(struct Node *node) {}
