@@ -5,4 +5,4 @@ struct Node {
   int conns;
 };
 
-void BFS(struct Node *node);
+void DFS(struct Node *node);
