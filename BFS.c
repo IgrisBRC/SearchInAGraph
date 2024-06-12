@@ -9,8 +9,16 @@ void BFS(struct Node *node) {
 
   struct Node **itr = node->nodes;
 
-  while (itr && *itr) {
-    BFS(*itr);
-    itr++;
+  if (!itr) {
+    return;
   }
+
+  for (int i = 0; i < node->conns; i ++){
+      BFS(*itr);
+      itr++;
+  }
+}
+
+void DFS(struct Node* node) {
+
 }
