@@ -10,7 +10,6 @@ void DFS(struct Node *node) {
   struct Node **itr = node->nodes;
 
   if (!itr) {
-      printf("None\n");
     return;
   }
 
@@ -19,4 +18,3 @@ void DFS(struct Node *node) {
     itr++;
   }
 }
-

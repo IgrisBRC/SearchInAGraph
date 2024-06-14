@@ -27,7 +27,7 @@ int main() {
 
   struct Node node0 = {0, n3, 2};
 
-  BFS(&node0);
+  DFS(&node0);
 
   free(n1);
   free(n2);
