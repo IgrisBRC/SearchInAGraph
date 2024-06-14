@@ -1,5 +1,4 @@
 #include "BFS.h"
-#include "queue.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -27,21 +26,10 @@ int main() {
 
   struct Node node0 = {0, n3, 2};
 
-  DFS(&node0);
+  BFS(&node0);
 
   free(n1);
   free(n2);
   free(n3);
   printf("None\n");
-
-  /* struct Node node3 = {3, NULL, 0}; */
-  /* struct Node node4 = {4, NULL, 0}; */
-  /* struct Node node5 = {5, NULL, 0}; */
-  /* struct Node node6 = {6, NULL, 0}; */
-  /**/
-  /* struct Queue *q = new_queue(); */
-  /**/
-  /* enqueue(q, &node3); */
-  /* dequeue(q); */
-
 }
