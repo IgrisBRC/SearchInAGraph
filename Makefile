@@ -1,11 +1,11 @@
 main: main.o DFS.o
-	cc -g -o main main.o DFS.o
+	cc -ggdb -fsanitize=address -Wall -Werror=implicit-function-declaration -o main main.o DFS.o
 
 main.o: main.c graph.h
-	cc -g -c main.c
+	cc -ggdb -fsanitize=address -Wall -Werror=implicit-function-declaration -c main.c
 
 DFS.o: DFS.c graph.h
-	cc -g -c DFS.c
+	cc -ggdb -fsanitize=address -Wall -Werror=implicit-function-declaration -c DFS.c
 
 release_main: release_main.o release_DFS.o
 	cc -o release_main release_main.o release_DFS.o -O2
